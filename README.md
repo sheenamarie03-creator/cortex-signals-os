@@ -20,7 +20,9 @@ The site uses placeholder editorial content and a placeholder newsletter signup 
 
 ## Private editorial/source tracker
 
-A prototype private tracker is available at [http://localhost:3000/tracker](http://localhost:3000/tracker). It is intentionally not linked from the public navigation and does not include authentication yet. Do not store confidential information in the tracker until authentication and a production-safe storage plan are added.
+A prototype private tracker is available at [http://localhost:3000/tracker](http://localhost:3000/tracker) while running the site locally with `npm run dev`. It is intentionally not linked from the public navigation and does not include authentication yet. Do not store confidential information in the tracker until authentication and a production-safe storage plan are added.
+
+For safe public deployment, `/tracker` is temporarily disabled in production. Production requests to `/tracker` and any nested tracker path return a 404 response, and the tracker page also renders Next.js `notFound()` as a second safeguard when `NODE_ENV` is `production`. The tracker code and local JSON data remain in the repository so the internal tool can be restored later after authentication and production-safe storage are added.
 
 The tracker helps collect neurotechnology and brain-health sources for future Cortex Signals newsletter issues, insights, reports, and consulting briefs. It currently includes placeholder/sample records with:
 
