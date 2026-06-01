@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import { TrackerSourceList } from "./TrackerSourceList";
 import { blankSourceTemplate, editorialSources, sourceStatuses } from "../lib/tracker";
 
@@ -10,6 +11,10 @@ const categoryTags = Array.from(new Set(editorialSources.flatMap((source) => sou
 const candidateIssues = Array.from(new Set(editorialSources.map((source) => source.candidateIssue))).sort();
 
 export default function TrackerPage() {
+  if (process.env.NODE_ENV === "production") {
+    notFound();
+  }
+
   return (
     <>
       <section className="page-hero tracker-hero">
