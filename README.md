@@ -18,6 +18,25 @@ This repository currently contains a clean Next.js website for Cortex Signals wi
 
 The site uses placeholder editorial content and a placeholder newsletter signup block so the brand, navigation, and page structure are easy to edit before connecting production services such as Beehiiv.
 
+## Private editorial/source tracker
+
+A prototype private tracker is available at [http://localhost:3000/tracker](http://localhost:3000/tracker). It is intentionally not linked from the public navigation and does not include authentication yet. Do not store confidential information in the tracker until authentication and a production-safe storage plan are added.
+
+The tracker helps collect neurotechnology and brain-health sources for future Cortex Signals newsletter issues, insights, reports, and consulting briefs. It currently includes placeholder/sample records with:
+
+- Source title and URL
+- Publication date
+- Company or organization
+- Category tags
+- Source type
+- Relevance, novelty, and commercial relevance scores from 1-5
+- Clinical relevance notes
+- Status: inbox, review, shortlisted, drafted, used, or archived
+- Candidate issue
+- Editorial notes
+
+Source data is still stored locally in `data/editorial-sources.json`. To add or edit entries during this prototype phase, update that JSON file directly and refresh `/tracker`. The page includes a searchable/filterable table view, status counts, an entry form mockup, and a copyable JSON template for new records. You can search by title, company/organization, notes, and clinical relevance notes, then filter by status, category tag, or candidate issue.
+
 ## Run locally
 
 Install dependencies:
