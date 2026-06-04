@@ -6,10 +6,15 @@ export default function Home() {
     <>
       <section className="hero">
         <p className="eyebrow">Independent neurotechnology intelligence</p>
-        <h1>Clinical signal for the people building, backing, and interpreting brain-health technology.</h1>
+        <h1>Cortex Signals</h1>
         <p className="hero-copy">
-          Cortex Signals helps smart readers understand neurotechnology through a grounded clinical and strategic lens—without the hype cycle.
+          Clinical signal for the people building, backing, and interpreting brain-health technology. Cortex Signals helps smart readers understand neurotechnology through a grounded clinical and strategic lens—without the hype cycle.
         </p>
+        <div className="hero-highlights" aria-label="Cortex Signals focus areas">
+          <span>Evidence-first analysis</span>
+          <span>Commercial readiness</span>
+          <span>Clinical adoption lens</span>
+        </div>
         <div className="hero-actions">
           <a className="button primary" href="#newsletter">
             Join the brief
