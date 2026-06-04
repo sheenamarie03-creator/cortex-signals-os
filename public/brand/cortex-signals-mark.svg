@@ -1,0 +1,26 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Cortex Signals mark</title>
+  <desc id="desc">A minimal neural signal mark with connected nodes and a pulse line for Cortex Signals.</desc>
+  <rect width="64" height="64" rx="18" fill="#07101A"/>
+  <rect x="1" y="1" width="62" height="62" rx="17" stroke="url(#frame)" stroke-opacity="0.72" stroke-width="2"/>
+  <path d="M16 37.5H22.2L25.4 25.5L31 46L36.4 18L40.2 37.5H48" stroke="url(#pulse)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M22.5 23.5L32 16L42.5 23.5M22.5 40.5L32 48L42.5 40.5" stroke="#8F7CFF" stroke-opacity="0.46" stroke-width="1.7" stroke-linecap="round"/>
+  <circle cx="22.5" cy="23.5" r="3.6" fill="#07101A" stroke="#36E8FF" stroke-width="2"/>
+  <circle cx="42.5" cy="23.5" r="3.6" fill="#07101A" stroke="#8F7CFF" stroke-width="2"/>
+  <circle cx="22.5" cy="40.5" r="3.6" fill="#07101A" stroke="#7CFFC7" stroke-width="2"/>
+  <circle cx="42.5" cy="40.5" r="3.6" fill="#07101A" stroke="#36E8FF" stroke-width="2"/>
+  <circle cx="32" cy="16" r="2.6" fill="#36E8FF"/>
+  <circle cx="32" cy="48" r="2.6" fill="#8F7CFF"/>
+  <defs>
+    <linearGradient id="frame" x1="6" y1="4" x2="58" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#36E8FF"/>
+      <stop offset="0.56" stop-color="#8F7CFF"/>
+      <stop offset="1" stop-color="#7CFFC7"/>
+    </linearGradient>
+    <linearGradient id="pulse" x1="16" y1="18" x2="48" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#36E8FF"/>
+      <stop offset="0.58" stop-color="#8F7CFF"/>
+      <stop offset="1" stop-color="#7CFFC7"/>
+    </linearGradient>
+  </defs>
+</svg>

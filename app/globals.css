@@ -124,27 +124,16 @@ main {
 }
 
 .brand {
-  gap: 12px;
-  color: var(--ink);
-  font-size: 1rem;
-  font-weight: 800;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
+  flex: 0 0 auto;
+  min-width: 0;
+  border-radius: 16px;
 }
 
-.brand-mark {
-  display: grid;
-  width: 40px;
-  height: 40px;
-  place-items: center;
-  border: 1px solid rgba(54, 232, 255, 0.46);
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(54, 232, 255, 0.16), rgba(10, 20, 31, 0.88));
-  box-shadow: 0 0 28px rgba(54, 232, 255, 0.16), inset 0 0 18px rgba(54, 232, 255, 0.08);
-  color: var(--accent);
-  font-size: 0.72rem;
-  font-weight: 900;
-  letter-spacing: 0.12em;
+.brand-logo {
+  display: block;
+  width: clamp(180px, 22vw, 240px);
+  height: auto;
+  filter: drop-shadow(0 0 18px rgba(54, 232, 255, 0.08));
 }
 
 .site-header nav {
