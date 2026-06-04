@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const navItems = [
@@ -13,8 +14,14 @@ export function Header() {
   return (
     <header className="site-header">
       <Link className="brand" href="/" aria-label="Cortex Signals home">
-        <span className="brand-mark">CS</span>
-        <span>Cortex Signals</span>
+        <Image
+          className="brand-logo"
+          src="/brand/cortex-signals-logo.svg"
+          alt="Cortex Signals"
+          width={280}
+          height={56}
+          priority
+        />
       </Link>
       <nav aria-label="Primary navigation">
         {navItems.map((item) => (
