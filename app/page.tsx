@@ -10,6 +10,11 @@ export default function Home() {
         <p className="hero-copy">
           Cortex Signals helps smart readers understand neurotechnology through a grounded clinical and strategic lens—without the hype cycle.
         </p>
+        <div className="hero-highlights" aria-label="Cortex Signals focus areas">
+          <span>Evidence-first analysis</span>
+          <span>Commercial readiness</span>
+          <span>Clinical adoption lens</span>
+        </div>
         <div className="hero-actions">
           <a className="button primary" href="#newsletter">
             Join the brief
