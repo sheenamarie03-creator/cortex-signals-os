@@ -143,55 +143,6 @@ main {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: clamp(42px, 6vw, 76px);
-  border-radius: 34px;
-  margin: 14px 0 24px;
-}
-
-.hero::after {
-  position: absolute;
-  top: -34%;
-  right: -16%;
-  width: min(520px, 64vw);
-  height: min(520px, 64vw);
-  border: 1px solid rgba(54, 232, 255, 0.18);
-  border-radius: 50%;
-  background:
-    radial-gradient(circle, rgba(54, 232, 255, 0.18), transparent 42%),
-    conic-gradient(from 120deg, transparent, rgba(124, 255, 199, 0.16), transparent 38%);
-  content: "";
-  filter: blur(1px);
-  opacity: 0.9;
-}
-
-.hero > * {
-  position: relative;
-  z-index: 1;
-}
-
-.hero h1,
-.page-hero h1,
-.section h2 {
-  margin: 0;
-  font-weight: 760;
-  line-height: 1.02;
-  letter-spacing: -0.045em;
-}
-
-.hero h1 {
-  max-width: 860px;
-  font-size: clamp(2.45rem, 5.2vw, 4.95rem);
-}
-
-.hero-copy {
-  max-width: 680px;
-  margin: 22px 0 0;
-  color: var(--muted-strong);
-  font-size: clamp(1rem, 1.35vw, 1.16rem);
-}
-
-.hero-highlights {
-  flex-wrap: wrap;
   gap: 10px;
   margin-top: 24px;
 }
