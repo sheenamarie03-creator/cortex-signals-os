@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { PageHero } from "../components/PageHero";
 
 export default function AboutPage() {
@@ -16,6 +18,26 @@ export default function AboutPage() {
         <p>
           The brief is written for readers who need more than headlines. It is grounded, discerning, and designed to help teams separate meaningful signal from market noise.
         </p>
+      </section>
+
+      <section className="section founder about-founder">
+        <div className="founder-photo-card">
+          <Image
+            src="/images/founder/sheena-lee-founder.jpg"
+            alt="Sheena M. Lee, DMSc, PA-C, founder of Cortex Signals"
+            width={320}
+            height={320}
+            className="founder-headshot"
+            sizes="(max-width: 860px) 180px, 160px"
+          />
+        </div>
+        <div>
+          <p className="eyebrow">Founder perspective</p>
+          <h2>Sheena M. Lee, DMSc, PA-C</h2>
+          <p>
+            Cortex Signals is led by Sheena M. Lee, a clinician and educator whose work spans psychiatry, neurology, intellectual and developmental disabilities, autism, and PA education. Her lens keeps the platform focused on clinically meaningful innovation, practical adoption, and the commercial questions that shape whether neurotechnology reaches the people it is meant to serve.
+          </p>
+        </div>
       </section>
     </>
   );

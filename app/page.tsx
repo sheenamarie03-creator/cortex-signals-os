@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { IssueCard } from "./components/IssueCard";
 import { audiences, coverageAreas, sampleIssues } from "./lib/content";
 
@@ -96,7 +98,16 @@ export default function Home() {
       </section>
 
       <section className="section founder">
-        <div className="portrait" aria-hidden="true">SL</div>
+        <div className="founder-photo-card">
+          <Image
+            src="/images/founder/sheena-lee-founder.jpg"
+            alt="Sheena M. Lee, DMSc, PA-C, founder of Cortex Signals"
+            width={320}
+            height={320}
+            className="founder-headshot"
+            sizes="(max-width: 860px) 180px, 160px"
+          />
+        </div>
         <div>
           <p className="eyebrow">Founder</p>
           <h2>Sheena M. Lee, DMSc, PA-C</h2>
