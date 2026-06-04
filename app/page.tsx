@@ -6,9 +6,9 @@ export default function Home() {
     <>
       <section className="hero">
         <p className="eyebrow">Independent neurotechnology intelligence</p>
-        <h1>Clinical signal for the people building, backing, and interpreting brain-health technology.</h1>
+        <h1>Cortex Signals</h1>
         <p className="hero-copy">
-          Cortex Signals helps smart readers understand neurotechnology through a grounded clinical and strategic lens—without the hype cycle.
+          Clinical signal for the people building, backing, and interpreting brain-health technology.
         </p>
         <div className="hero-highlights" aria-label="Cortex Signals focus areas">
           <span>Evidence-first analysis</span>
@@ -35,7 +35,7 @@ export default function Home() {
         </div>
         <div className="tag-grid">
           {coverageAreas.map((area) => (
-            <span key={area}>{area}</span>
+            <span className="coverage-card" key={area}>{area}</span>
           ))}
         </div>
       </section>
@@ -45,7 +45,7 @@ export default function Home() {
         <h2>Who it is for</h2>
         <div className="grid two">
           {audiences.map((audience) => (
-            <div className="card" key={audience}>
+            <div className="audience-card" key={audience}>
               <p>{audience}</p>
             </div>
           ))}
