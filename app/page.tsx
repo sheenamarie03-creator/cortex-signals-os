@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import { BeehiivSubscribeForm } from "./components/BeehiivSubscribeForm";
 import { IssueCard } from "./components/IssueCard";
 import { audiences, coverageAreas, sampleIssues } from "./lib/content";
 
@@ -86,15 +86,11 @@ export default function Home() {
         <div>
           <p className="eyebrow">Newsletter</p>
           <h2>Get the signal in your inbox.</h2>
-          <p>Signup integration placeholder for Beehiiv. Replace this block with the live embed when ready.</p>
+          <p>
+            Cortex Signals is a selective brief on neurotechnology, neurogenetics, brain-health devices, and the clinical adoption questions that matter.
+          </p>
         </div>
-        <form>
-          <label htmlFor="email">Email address</label>
-          <div className="signup-row">
-            <input id="email" type="email" placeholder="you@example.com" />
-            <button type="button">Notify me</button>
-          </div>
-        </form>
+        <BeehiivSubscribeForm />
       </section>
 
       <section className="section founder">
