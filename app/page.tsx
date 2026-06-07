@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Script from "next/script";
 
 import { IssueCard } from "./components/IssueCard";
 import { audiences, coverageAreas, sampleIssues } from "./lib/content";
@@ -86,15 +87,18 @@ export default function Home() {
         <div>
           <p className="eyebrow">Newsletter</p>
           <h2>Get the signal in your inbox.</h2>
-          <p>Signup integration placeholder for Beehiiv. Replace this block with the live embed when ready.</p>
+          <p>
+            Cortex Signals is a selective brief on neurotechnology, neurogenetics, brain-health devices, and the clinical adoption questions that matter.
+          </p>
         </div>
-        <form>
-          <label htmlFor="email">Email address</label>
-          <div className="signup-row">
-            <input id="email" type="email" placeholder="you@example.com" />
-            <button type="button">Notify me</button>
-          </div>
-        </form>
+        <div className="beehiiv-form-card" aria-label="Subscribe to Cortex Signals on Beehiiv">
+          <Script
+            id="beehiiv-newsletter-form"
+            src="https://subscribe-forms.beehiiv.com/v3/loader.js"
+            data-beehiiv-form="4e0af6a5-2aab-4e5b-bd82-d5583f9e481a"
+            strategy="afterInteractive"
+          />
+        </div>
       </section>
 
       <section className="section founder">
