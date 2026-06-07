@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import "./globals.css";
@@ -16,6 +17,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Header />
         <main>{children}</main>
         <Footer />
+        <Script
+          id="beehiiv-attribution"
+          src="https://subscribe-forms.beehiiv.com/attribution.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
